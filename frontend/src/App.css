@@ -1,0 +1,42 @@
+#root { min-height: 100vh; }
+.shell { display: flex; min-height: 100vh; }
+.sidebar { width: 242px; flex: 0 0 242px; background: #101923; color: #edf2f6; padding: 29px 18px 22px; display: flex; flex-direction: column; }
+.brand { display: flex; align-items: center; gap: 11px; padding: 0 12px; font-size: 17px; letter-spacing: -.03em; white-space: nowrap; }
+.brand b { color: #8ed5ca; font-weight: 650; }
+.brand-mark { display: grid; place-items: center; width: 32px; height: 32px; border-radius: 8px; background: #7ac9bc; color: #0d2629; font-size: 18px; font-weight: 800; }
+.sidebar-label { margin: 65px 12px 14px; color: #718493; font-size: 10px; letter-spacing: .16em; font-weight: 700; }
+nav { display: grid; gap: 5px; }
+.nav-link { padding: 11px 14px; border-radius: 8px; color: #a9b8c3; text-decoration: none; font-size: 13px; }
+.nav-link:hover, .nav-link.active { background: #1c2c37; color: #e7f9f4; }
+.nav-link.active { box-shadow: inset 3px 0 #7ac9bc; }
+.sidebar-bottom { margin-top: auto; padding: 18px 12px 0; color: #718493; border-top: 1px solid #273640; font-size: 11px; }
+.main { width: min(100%, 1440px); margin: 0 auto; padding: 0 54px 80px; }
+.topbar { height: 85px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #e6ebee; color: #65727d; font-size: 12px; }
+.status-pill { display: inline-flex; align-items: center; gap: 7px; border: 1px solid #d8e8e2; border-radius: 99px; padding: 7px 11px; color: #327969; background: #edf7f3; }
+.status-dot { width: 6px; height: 6px; background: #49aa91; border-radius: 50%; }
+.hero { padding: 80px 0 88px; max-width: 850px; }
+.eyebrow { color: #2c8c7c; font-weight: 700; letter-spacing: .14em; font-size: 10px; }
+h1, h2, h3, p { margin: 0; }
+h1 { margin-top: 22px; font-size: clamp(38px, 5vw, 66px); letter-spacing: -.065em; line-height: 1.16; font-weight: 690; color: #142532; }
+h1 em { font-style: normal; color: #369e8b; }
+.hero p { max-width: 640px; margin-top: 26px; color: #62717d; font-size: 15px; line-height: 1.9; }
+.hero-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; margin-top: 35px; }
+.primary-link { display: inline-flex; gap: 20px; align-items: center; padding: 13px 17px; background: #18342f; border-radius: 7px; color: white; text-decoration: none; font-size: 13px; }
+.primary-link:hover { background: #245c4f; }
+.quiet-note { color: #83909b; font-size: 11px; }
+.section { border-top: 1px solid #e1e8e8; padding-top: 33px; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 24px; }
+h2 { margin-top: 8px; font-size: 26px; letter-spacing: -.045em; color: #18303a; }
+.section-meta { color: #a4afb5; font-size: 11px; }
+.module-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.module-card { min-height: 220px; background: #fff; border: 1px solid #e5ebee; border-radius: 10px; padding: 23px 22px; box-shadow: 0 6px 20px #19374005; }
+.card-top { display: flex; justify-content: space-between; align-items: center; }
+.card-index { color: #3c9e8e; font-size: 12px; font-weight: 700; }
+.card-state { color: #8e9ca5; font-size: 10px; }
+h3 { margin-top: 31px; color: #1c303b; font-size: 17px; }
+.module-card p { margin-top: 11px; color: #72808b; line-height: 1.8; font-size: 12px; }
+.principle { margin-top: 34px; padding: 28px 31px; border-radius: 10px; background: #eaf3f0; display: flex; align-items: center; justify-content: space-between; gap: 50px; }
+.principle h2 { font-size: 20px; }
+.principle p { max-width: 470px; color: #567167; line-height: 1.8; font-size: 12px; }
+@media (max-width: 900px) { .sidebar { width: 190px; flex-basis: 190px; } .main { padding: 0 30px 60px; } .module-grid { grid-template-columns: 1fr; } .module-card { min-height: 0; } .principle { display: block; } .principle p { margin-top: 15px; } }
+@media (max-width: 640px) { .shell { display: block; } .sidebar { width: 100%; height: auto; padding: 17px 20px; } .sidebar-label, .sidebar-bottom, nav { display: none; } .main { padding: 0 20px 45px; } .topbar { height: 65px; } .hero { padding: 60px 0 68px; } .hero-actions { align-items: start; flex-direction: column; gap: 13px; } }

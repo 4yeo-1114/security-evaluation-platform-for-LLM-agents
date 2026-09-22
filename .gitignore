@@ -1,0 +1,15 @@
+# Local credentials and runtime data must never enter Git.
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+data/runs/
+data/*.db
+frontend/node_modules/
+frontend/dist/
+*.log
